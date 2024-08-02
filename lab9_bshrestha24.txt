@@ -1,0 +1,38 @@
+
+PLAY [bshrestha24] *************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [bshrestha24]
+
+TASK [update Apache] ***********************************************************
+ok: [bshrestha24]
+
+TASK [install EPEL repository to vm] *******************************************
+ok: [bshrestha24]
+
+TASK [remove tree package form vm] *********************************************
+changed: [bshrestha24]
+
+TASK [set hostname to seneca_id] ***********************************************
+ok: [bshrestha24]
+
+TASK [create new user with seneca_id] ******************************************
+ok: [bshrestha24]
+
+TASK [copy SSH key for new user] ***********************************************
+ok: [bshrestha24]
+
+TASK [create lab directories] **************************************************
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab1)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab2)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab3)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab4)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab5)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab6)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab7)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab8)
+ok: [bshrestha24] => (item=/home/bshrestha24/ops445/lab9)
+
+PLAY RECAP *********************************************************************
+bshrestha24                : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
